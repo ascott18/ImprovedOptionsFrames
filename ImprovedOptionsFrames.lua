@@ -51,8 +51,7 @@ local function MakeFrameScalable(parent, x, y)
 	handle.SetScale = frame.SetScale -- MoveAnything might be locking this down if the user has scaled the frame with MoveAnything. It only hooks in the metatable, though, so this should always work.
 
 	handle.tex = handle:CreateTexture()
-	--handle.tex:SetTexture("Interface\\AddOns\\ImprovedOptionsFrames\\Resize")
-	handle.tex:SetTexture("Interface\\AddOns\\TellMeWhen\\Textures\\Resize")
+	handle.tex:SetTexture("Interface\\AddOns\\ImprovedOptionsFrames\\Resize")
 	handle.tex:SetVertexColor(0.6, 0.6, 0.6)
 	handle.tex:SetAllPoints()
 
