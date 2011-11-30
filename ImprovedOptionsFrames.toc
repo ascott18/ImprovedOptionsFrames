@@ -1,6 +1,6 @@
-﻿## Interface: 40200
+﻿## Interface: 40300
 ## Title: Improved Options Frames
-## Version: 1.1
+## Version: 1.2
 ## Author: Cybeloras of Mal'Ganis
 ## Notes: Allows you to scale and move the Blizzard options frames.
 ## SavedVariables: ImprovedOptionsFramesDB
