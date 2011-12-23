@@ -1,7 +1,7 @@
 ﻿local frame = CreateFrame("Frame")
 local addonName = ...
 
-BetterBlizzOptionsResizeGrip = BetterBlizzOptionsResizeGrip or CreateFrame("Frame")
+BetterBlizzOptionsResizeGrip = BetterBlizzOptionsResizeGrip or CreateFrame("Frame", "BetterBlizzOptionsResizeGrip", InterfaceOptionsFrame)
 BetterBlizzOptionsResizeGrip:Hide()
 BetterBlizzOptionsResizeGrip.Show = function() end
 
