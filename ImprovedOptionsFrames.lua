@@ -75,6 +75,7 @@ local function MakeFrameMovable(f)
 	end
 end
 
+local wow_600 = select(4, GetBuildInfo()) >= 60000
 frame:RegisterEvent("ADDON_LOADED")
 function frame:OnEvent(event, addon)
 	if addon == addonName then
@@ -86,14 +87,20 @@ function frame:OnEvent(event, addon)
 		MakeFrameScalable(VideoOptionsFrame)
 		MakeFrameMovable(VideoOptionsFrame)
 		
-		MakeFrameScalable(HelpFrame)
-		MakeFrameMovable(HelpFrame)
+		if wow_600 then
+			MakeFrameScalable(AddonList, 4, -4)
+			MakeFrameMovable(AddonList)
+		end
 		
 		if IsAddOnLoaded("Blizzard_BindingUI") then
 			self:OnEvent(event, "Blizzard_BindingUI")
 		end
 	elseif addon == "Blizzard_BindingUI" then
-		MakeFrameScalable(KeyBindingFrame, -42, 10)
+		if wow_600 then
+			MakeFrameScalable(KeyBindingFrame)
+		else
+			MakeFrameScalable(KeyBindingFrame, -42, 10)
+		end
 		MakeFrameMovable(KeyBindingFrame)
 	end
 end
