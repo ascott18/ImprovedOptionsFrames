@@ -87,6 +87,9 @@ function frame:OnEvent(event, addon)
 		MakeFrameScalable(VideoOptionsFrame)
 		MakeFrameMovable(VideoOptionsFrame)
 		
+		MakeFrameScalable(HelpFrame)
+		MakeFrameMovable(HelpFrame)
+		
 		if wow_600 then
 			MakeFrameScalable(AddonList, 4, -4)
 			MakeFrameMovable(AddonList)

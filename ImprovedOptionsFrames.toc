@@ -1,7 +1,6 @@
 ﻿## Interface: 60000
-## X-Compatible-With: 50400
 ## Title: Improved Options Frames
-## Version: 1.5.4
+## Version: 1.5.5
 ## Author: Cybeloras of Detheroc/Mal'Ganis
 ## Notes: Allows you to scale and move the Blizzard options frames.
 ## SavedVariables: ImprovedOptionsFramesDB
